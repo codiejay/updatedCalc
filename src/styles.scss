@@ -1,0 +1,82 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+//Global 
+button { 
+  cursor: pointer;
+}
+
+//Screen 
+#Mainscreen { 
+  padding: 1rem 0.6rem;
+  margin: 1em auto 0.5rem auto;
+  font-size: 3rem;
+  width: 50%;
+  text-align: right;
+  border: 1px solid grey;
+  border-radius: 9px;
+}
+
+//Keyboard
+#keyboardBox { 
+  width: 50%;
+  margin: 0 auto;
+    #clrBttn,#EqualsBttn { 
+      background-color: orange;
+      border: none;
+      font-size: 1.9rem;
+      width: 100%;
+      border-radius: 4px;
+      padding: 0.7rem 0.4rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    #buttonGrid { 
+      background-color: #14213d;
+      display: grid;
+      grid-template-columns: 7fr 3fr;
+      padding: 1rem 0.5rem;
+      border-radius: 8px;
+      margin-bottom: 0.7rem;
+      gap: 1rem;
+        #keyboardNumberKeys { 
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+            button { 
+              border: 1px solid white;
+              padding: 1rem;
+              font-size: 1.4rem;
+              color: #14213d;
+                &:active { 
+                  background-color: orange;
+                  color: #14213d;
+                }
+            }
+
+        }
+        #keyboardFuncKeys { 
+            button { 
+              display: block;
+              width: 100%;
+              background-color: orange;
+              padding: 1rem;
+              font-size: 1.4rem;
+              color: white;
+              border: 1px solid white;
+              margin-bottom: 0.5rem;
+            }
+        }
+    }
+    #EqualsBttn { 
+      
+    }
+}
+
+
+* { 
+  margin: 0;
+  box-sizing: border-box;
+}
